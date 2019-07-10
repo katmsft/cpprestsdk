@@ -816,6 +816,7 @@ protected:
             }
             else
             {
+                std::cout << "The code had entered a path where IsWindows8Point1OrGreater returned false" << std::endl;
                 // However, if it is not configured...
                 proxy_info proxyDefault;
                 if (!WinHttpGetDefaultProxyConfiguration(&proxyDefault) ||
